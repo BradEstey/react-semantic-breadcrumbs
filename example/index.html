@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breadcrumbs Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            padding: 40px;
+        }
+
+        #app {
+            max-width: 800px;
+        }
+
+        ol, ul {
+            list-style: none;
+            display: inline;
+            padding: 0;
+            margin: 0;
+        }
+
+        li { 
+            display: inline;
+            color: #ccc;
+        }
+
+        a {
+            color: #5a94aa;
+            text-decoration: none
+        }
+
+        a:hover {
+            color: #666;
+            text-decoration: underline
+        }
+
+        li.last a {
+            color: #666;
+        }
+
+        label {
+            color: #888;
+            font-size: 14px;
+            margin-right: 6px;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+            margin: 40px 0;
+            border-bottom: none;
+        }
+
+        pre {
+            margin-top: 40px;
+            border: 1px solid #ccc;
+            background: #f6f6f6;
+            padding: 20px;
+            font-size: 14px;
+            color: #666;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/javascript" src="./build/app.js"></script>
+</body>
+</html>
