@@ -13,17 +13,29 @@ class App extends Component {
     this.setState({ format: event.target.value })
   }
 
+  handleClick(event) {
+    event.preventDefault()
+    alert(`Clicked link to navigate to: ${event.currentTarget.href}`)
+  }
+
   renderExampleBreadcrumbList() {
     const { format } = this.state
 
     return (
       <BreadcrumbList format={format} separator=" / ">
-        <ListItem url="/" type="WebSite">Home</ListItem>
-        <ListItem url="/products" type="SomeProducts">Products</ListItem>
-        <ListItem 
-          url="/products/iphone-7-plus" 
+        <ListItem
+          url="/"
+          type="WebSite"
+          clickHandler={this.handleClick}>Home</ListItem>
+        <ListItem
+          url="/products"
+          type="SomeProducts"
+          clickHandler={this.handleClick}>Products</ListItem>
+        <ListItem
+          url="/products/iphone-7-plus"
           className="last"
-          type="IndividualProduct">iPhone 7 Plus</ListItem>
+          type="IndividualProduct"
+          clickHandler={this.handleClick}>iPhone 7 Plus</ListItem>
       </BreadcrumbList>
     )
   }

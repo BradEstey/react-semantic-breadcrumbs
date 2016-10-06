@@ -47,13 +47,13 @@ Will produce the following HTML:
     <li property="itemListElement" typeof="ListItem">
       <a property="item" typeof="Thing" href="/">
         <span property="name">Home</span>
-      </a> > 
+      </a> >
       <meta property="position" content="1" />
     </li>
     <li property="itemListElement" typeof="ListItem">
       <a property="item" typeof="Thing" href="/products">
         <span property="name">Products</span>
-      </a> > 
+      </a> >
       <meta property="position" content="2" />
     </li>
     <li property="itemListElement" typeof="ListItem">
@@ -80,6 +80,9 @@ The page to link to.
 
 - **type** `string` (Default: Thing)<br />
 Uses [schema.org types](http://schema.org/docs/full.html).
+
+- **clickHandler** `function` (Default: null)<br />
+Listen for when the `<a>` tag is clicked. 
 
 ## Import Only a Specific Format
 

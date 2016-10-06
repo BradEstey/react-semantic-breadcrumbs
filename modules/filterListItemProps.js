@@ -4,6 +4,7 @@ export default props => {
   delete itemProps.children
   delete itemProps.position
   delete itemProps.url
+  delete itemProps.clickHandler
   delete itemProps.separator
   return itemProps
 }
