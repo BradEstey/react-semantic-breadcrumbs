@@ -73,6 +73,9 @@ Choose from “RDFa”, “Microdata”, “HTML5”, or “JSON-LD”. Case-ins
 - **separator** `string` (Default: null)<br />
 The string to place between each `ListItem`. Ignored by JSON-LD.
 
+- **clickHandler** `function` (Default: null)<br />
+Listen for when a `ListItem`’s `<a>` tag is clicked.
+
 ## ListItem Props
 
 - **url** `string` (Required)<br />
@@ -82,7 +85,7 @@ The page to link to.
 Uses [schema.org types](http://schema.org/docs/full.html).
 
 - **clickHandler** `function` (Default: null)<br />
-Listen for when the `<a>` tag is clicked. 
+Listen for when the `<a>` tag is clicked. Takes precedence over `BreadcrumbList`’s `clickHandler` prop.
 
 ## Import Only a Specific Format
 

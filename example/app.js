@@ -22,20 +22,20 @@ class App extends Component {
     const { format } = this.state
 
     return (
-      <BreadcrumbList format={format} separator=" / ">
+      <BreadcrumbList
+        format={format}
+        separator=" / "
+        clickHandler={this.handleClick}>
         <ListItem
           url="/"
-          type="WebSite"
-          clickHandler={this.handleClick}>Home</ListItem>
+          type="WebSite">Home</ListItem>
         <ListItem
           url="/products"
-          type="SomeProducts"
-          clickHandler={this.handleClick}>Products</ListItem>
+          type="SomeProducts">Products</ListItem>
         <ListItem
           url="/products/iphone-7-plus"
           className="last"
-          type="IndividualProduct"
-          clickHandler={this.handleClick}>iPhone 7 Plus</ListItem>
+          type="IndividualProduct">iPhone 7 Plus</ListItem>
       </BreadcrumbList>
     )
   }
